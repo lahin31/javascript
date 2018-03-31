@@ -1,5 +1,6 @@
 // Asynchronous call with generators(get request)
  
+// This is a Generator function
 function* get_gen() {
 	 yield axios.get("https://jsonplaceholder.typicode.com/users");
 	 yield axios.get("https://jsonplaceholder.typicode.com/posts");
