@@ -1,8 +1,8 @@
 async function myFun() {
-    let isAuth = await checkUser();
+    let isAuth = await checkUser(); // wait for checkUser()
     let user = null;
     if(isAuth) {
-     user = await fetchUser();
+     user = await fetchUser(); // wait for fetchUser()
     }
     console.log("User name: " + user.name + "<br>")
 };
